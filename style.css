@@ -1,0 +1,164 @@
+:root {
+  --card: hsl(0, 0%, 100%);
+  --bg: hsl(30, 54%, 90%);
+  --h1: hsl(24, 5%, 18%) ;
+  --h2: hsl(14, 45%, 36%);
+  --h3: hsl(332, 51%, 32%);
+  --p: hsl(30, 10%, 34%);
+
+
+  --fw-1: 400;
+  --fw-2: 600;
+  --fw-3: 700;
+}
+
+/* White: hsl(0, 0%, 100%)
+-
+Rose White: hsl(330, 100%, 98%)
+Eggshell: hsl(30, 54%, 90%)
+-
+Light Grey: hsl(30, 18%, 87%)
+
+*/
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+}
+li{
+  font-family: 'Outfit';
+  font-weight: var(--fw-2);
+  margin-bottom: 17px;
+  color: var(--h2);
+}
+
+h1{
+  font-family: 'Young Serif';
+  font-weight: var(--fw-3);
+  color: hsl(24, 5%, 18%);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h2{
+  font-family: 'Young Serif';
+  font-weight: var(--fw-2);
+  color: hsl(14, 45%, 36%);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.values{
+  color: var(--h2);
+  font-weight: var(--fw-2);
+}
+
+h3{
+  font-family: 'Outfit';
+  font-weight: var(--fw-2);
+  color: hsl(332, 51%, 32%);
+}
+
+p{
+  font-family: 'Outfit';
+  color: hsl(30, 10%, 34%);
+  font-weight: var(--fw-1);
+}
+
+span{
+  font-weight: var(--fw-2);
+  margin-left: 15px;
+}
+
+.move-this-shit{
+  margin-left: 15px;
+}
+
+.container{
+  padding: 100px;
+  display: flex;
+}
+
+.card{
+  background: var(--card);
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  border-radius: 30px;
+  padding: 30px;
+}
+
+img{
+  height: 300px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.line-breaker{
+  border: 1px solid hsl(30, 18%, 87%);
+  width: 100%;
+}
+
+table{
+  margin: 10px;
+}
+
+table td{
+  border-bottom: 2px solid hsl(30, 18%, 87%);
+  height: 50px;
+}
+
+table .values{
+  font-weight: var(--fw-3);
+}
+
+.subtle-container{
+  margin-top: 20px;
+  background: hsl(330, 100%, 98%);
+  padding: 20px;
+}
+.subtle-container h3{
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 425px) and (min-width: 320px){
+  .card{
+    background: var(--card);
+    width:  100%;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    border-radius: 0;
+    padding: 0;
+  }
+  .container{
+    padding: 0px;
+  }
+  img{
+    border-radius: 0;
+    height: 200px;
+  }
+  h2{
+    margin-left: 20px;
+  }
+
+  .center-this{
+    text-align: center;
+  }
+
+  .subtle-container{
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .size{
+    font-size: 19px; 
+  }
+}
